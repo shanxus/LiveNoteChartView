@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LiveNoteChartViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBP-XR-hhm" customClass="LiveNoteChartBackground" customModule="LiveNoteChartViewTest" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="293.5" width="300" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PgA-Ns-1dY"/>
+                                    <constraint firstAttribute="width" constant="300" id="lPO-tH-0rA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pathWidth">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IGm-Mj-mdA" customClass="LiveNoteChart" customModule="LiveNoteChartViewTest" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="293.5" width="300" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="pointSize">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qBP-XR-hhm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7Co-np-0pp"/>
+                            <constraint firstItem="IGm-Mj-mdA" firstAttribute="width" secondItem="qBP-XR-hhm" secondAttribute="width" id="KY9-MV-q8X"/>
+                            <constraint firstItem="IGm-Mj-mdA" firstAttribute="centerY" secondItem="qBP-XR-hhm" secondAttribute="centerY" id="aRl-d9-ovd"/>
+                            <constraint firstItem="IGm-Mj-mdA" firstAttribute="height" secondItem="qBP-XR-hhm" secondAttribute="height" id="eA2-UZ-D8Q"/>
+                            <constraint firstItem="qBP-XR-hhm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="jqf-0a-k24"/>
+                            <constraint firstItem="IGm-Mj-mdA" firstAttribute="centerX" secondItem="qBP-XR-hhm" secondAttribute="centerX" id="pNT-Ku-9h5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
